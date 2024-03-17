@@ -8,7 +8,7 @@ const userRegister = async (req, res) => {
 
   const encPassword = await bcrypt.hash(password, 10);
 
-  //creating users in database named "users"
+  //creating data in user database
   try {
     let createdUser = await users.create({
       name,
