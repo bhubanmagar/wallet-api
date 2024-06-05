@@ -12,21 +12,19 @@ A wallet api where you can add you income and also expenditure with respect to p
     "remarks": "[income | expense]"
 }
 
-##Add Expense
-Endpoint: http://localhost:8000/expense/add
-Method: POST
+## Add Expense
+**Endpoint:** `http://localhost:8000/expense/add`  
+**Method:** `POST`
 
-Payload:
-
-json
-Copy code
+**Payload:**
+```json
 {
     "amount": " ",
     "remarks": " "
 }
 
-##Dashboard
-Endpoint: http://localhost:8000/users/dashboard
-Method: GET
+## Dashboard
+**Endpoint:** `http://localhost:8000/users/dashboard`  
+**Method:** `GET`
 
-Note: Please pass the Bearer token along with the request.
+**Note:** Please pass the Bearer token along with the request.
