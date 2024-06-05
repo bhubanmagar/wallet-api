@@ -1,22 +1,32 @@
 A wallet api where you can add you income and also expenditure with respect to particular user and can track you finance from dashboard.
+# API Documentation
 
-**add income:**
-http://localhost:8000/income/add
-method : GET
-payload:{
-amount:" ",
-remarks : [income| expense]
+## Add Income
+**Endpoint:** `http://localhost:8000/income/add`  
+**Method:** `GET`
+
+**Payload:**
+```json
+{
+    "amount": " ",
+    "remarks": "[income | expense]"
 }
 
-**add expense**
-http://localhost:8000/expense/add
-method : POST
-payload: {
-amount: " " ,
-remarks : " "
+##Add Expense
+Endpoint: http://localhost:8000/expense/add
+Method: POST
+
+Payload:
+
+json
+Copy code
+{
+    "amount": " ",
+    "remarks": " "
 }
 
-**Dashboard**
-http://localhost:8000/users/dashboard
-method: GET
-note: please pass bearer token along with request
+##Dashboard
+Endpoint: http://localhost:8000/users/dashboard
+Method: GET
+
+Note: Please pass the Bearer token along with the request.
